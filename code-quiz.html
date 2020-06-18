@@ -4,37 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<div id="quiz"></div>
-<h1> Timed Quiz!</h1>
- <h2>Is the sky blue? </h2>
-   
 
-<button id ="abutton"> true</button>
-<button id ="bbutton"> false</button>
-<div id="results"></div>
+</head>
+
 
 <body>
-    
+    <div id="quiz"></div>
+    <h1> Timed Quiz!</h1>
+    <h2><span id="timer"></span> seconds remaining</h2>
+    <h2 id="question"></h2>
+    <button id= "startButton"> Start!</button>
+    <button id="abutton"> true</button>
+    <button id="bbutton"> false</button>
+    <div id="results"></div>
+    <h1>Score: <span id="score"></span></h1>
+
+    <div id="pastScores"></div>
 </body>
-<script>
-    // create button
-var startButton = document.createElement("button")
-var aButton = document.getElementById("abutton")
-var bButton =document.getElementById("bbutton")
-//set text content for button<
-   
- 
-
-  aButton.onclick = function alertMe(){
-alert("Correct!!");
-
- }
- bButton.onclick = function alertB(){
-     alert("incorrect!")
- }
- 
 
 
-</script>
+<script src="javascript.js"></script>
 </html>
